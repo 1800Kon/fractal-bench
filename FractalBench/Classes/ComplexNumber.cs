@@ -20,7 +20,7 @@ namespace FractalBench.Classes
         public void Square()
         {
             double temp = (a * a) - (b * b);
-            b = 2 * a * b;
+            b = 2.0 * a * b;
             a = temp;
         }
 

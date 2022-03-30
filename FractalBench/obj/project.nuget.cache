@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8uuznXRgT5zgct8NjW+eZJCqNx/Sxqu7OUyc+msXz3nTkdmZy3o7fbZJn/FQ7UC/S5TLrcwr+eT7KdD442FVIQ==",
+  "dgSpecHash": "421ssd6xONfcTBBgKhVVM67xGU1slCbE743rZqXqMq6YNrSaiwhvI5z8+ulGSxwm4QL1iBD9FJ4diYDBmgazdw==",
   "success": true,
   "projectFilePath": "C:\\Users\\konst\\Desktop\\Uni\\fractal-bench\\FractalBench\\FractalBench.csproj",
   "expectedPackageFiles": [
@@ -27,7 +27,8 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.8-rel-29722-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.8-rel-29722-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.12\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.12\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
-    "C:\\Users\\konst\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+    "C:\\Users\\konst\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\konst\\.nuget\\packages\\writeablebitmapex\\1.6.8\\writeablebitmapex.1.6.8.nupkg.sha512"
   ],
   "logs": []
 }

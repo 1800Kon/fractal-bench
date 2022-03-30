@@ -315,6 +315,15 @@
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {}
         }
+      },
+      "WriteableBitmapEx/1.6.8": {
+        "type": "package",
+        "compile": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
@@ -809,6 +818,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
+      "WriteableBitmapEx/1.6.8": {
+        "type": "package",
+        "compile": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
         }
       }
     },
@@ -1306,6 +1324,15 @@
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {}
         }
+      },
+      "WriteableBitmapEx/1.6.8": {
+        "type": "package",
+        "compile": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
@@ -1802,6 +1829,15 @@
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {}
         }
+      },
+      "WriteableBitmapEx/1.6.8": {
+        "type": "package",
+        "compile": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
@@ -2296,6 +2332,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
+      "WriteableBitmapEx/1.6.8": {
+        "type": "package",
+        "compile": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
         }
       }
     },
@@ -2793,6 +2838,15 @@
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {}
         }
+      },
+      "WriteableBitmapEx/1.6.8": {
+        "type": "package",
+        "compile": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
@@ -3287,6 +3341,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
+      "WriteableBitmapEx/1.6.8": {
+        "type": "package",
+        "compile": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
         }
       }
     },
@@ -3783,6 +3846,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
+      "WriteableBitmapEx/1.6.8": {
+        "type": "package",
+        "compile": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
+        },
+        "runtime": {
+          "lib/uap/WriteableBitmapEx.Uwp.dll": {}
         }
       }
     }
@@ -8261,12 +8333,55 @@
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "WriteableBitmapEx/1.6.8": {
+      "sha512": "DmMeRt3Zr+xu21U9uY9baniMlX86nSKRBoUvFXZilsk553Him37OX04nE2ctJtPHONbVD/iB1dsIfQx+r1LH0Q==",
+      "type": "package",
+      "path": "writeablebitmapex/1.6.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/NetCore45/WriteableBitmapEx.WinRT.dll",
+        "lib/NetCore45/WriteableBitmapEx.WinRT.pdb",
+        "lib/NetCore45/WriteableBitmapEx.WinRT.xml",
+        "lib/WindowsPhone8/WriteableBitmapExWinPhone.XML",
+        "lib/WindowsPhone8/WriteableBitmapExWinPhone.dll",
+        "lib/WindowsPhone8/WriteableBitmapExWinPhone.pdb",
+        "lib/WindowsPhone8/WriteableBitmapExWinPhoneXnaDependant.XML",
+        "lib/WindowsPhone8/WriteableBitmapExWinPhoneXnaDependant.dll",
+        "lib/WindowsPhone8/WriteableBitmapExWinPhoneXnaDependant.pdb",
+        "lib/net40/WriteableBitmapEx.Wpf.dll",
+        "lib/net40/WriteableBitmapEx.Wpf.pdb",
+        "lib/net40/WriteableBitmapEx.Wpf.xml",
+        "lib/netcoreapp3.0/WriteableBitmapEx.Wpf.deps.json",
+        "lib/netcoreapp3.0/WriteableBitmapEx.Wpf.dll",
+        "lib/netcoreapp3.0/WriteableBitmapEx.Wpf.pdb",
+        "lib/sl4-wp71/WriteableBitmapExWinPhone.XML",
+        "lib/sl4-wp71/WriteableBitmapExWinPhone.dll",
+        "lib/sl4-wp71/WriteableBitmapExWinPhone.pdb",
+        "lib/sl4-wp71/WriteableBitmapExWinPhoneXnaDependant.XML",
+        "lib/sl4-wp71/WriteableBitmapExWinPhoneXnaDependant.dll",
+        "lib/sl4-wp71/WriteableBitmapExWinPhoneXnaDependant.pdb",
+        "lib/sl4/WriteableBitmapEx.XML",
+        "lib/sl4/WriteableBitmapEx.dll",
+        "lib/sl4/WriteableBitmapEx.pdb",
+        "lib/uap/WriteableBitmapEx.Uwp.XML",
+        "lib/uap/WriteableBitmapEx.Uwp.dll",
+        "lib/uap/WriteableBitmapEx.Uwp.pdb",
+        "lib/uap/WriteableBitmapEx.Uwp.pri",
+        "lib/wpa81/WriteableBitmapEx.WinRT.dll",
+        "lib/wpa81/WriteableBitmapEx.WinRT.pdb",
+        "lib/wpa81/WriteableBitmapEx.WinRT.xml",
+        "writeablebitmapex.1.6.8.nupkg.sha512",
+        "writeablebitmapex.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
-      "System.Drawing.Common >= 6.0.0"
+      "System.Drawing.Common >= 6.0.0",
+      "WriteableBitmapEx >= 1.6.8"
     ]
   },
   "packageFolders": {
@@ -8316,6 +8431,10 @@
           "System.Drawing.Common": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "WriteableBitmapEx": {
+            "target": "Package",
+            "version": "[1.6.8, )"
           }
         },
         "imports": [
