@@ -8,13 +8,8 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
 namespace FractalBench
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         public MainPage()
@@ -24,13 +19,14 @@ namespace FractalBench
 
         private void Render_Click(object sender, RoutedEventArgs e)
         {
-            CreateFractal(400, 400, 2);
+            CreateFractal(400, 400, 4);
         }
 
         private void CreateFractal(int height, int width, int noOfThreads)
         {
             List<WriteableBitmap> listOfBitmaps = new List<WriteableBitmap>();
-            List<List<int>> listData = new List<List<int>>();
+            List<ConcurrentQueue<int>> listData = new List<ConcurrentQueue<int>>();
+
             ConcurrentQueue<int> listToUse = null;
             WriteableBitmap finalResult = BitmapFactory.New(width, height);
 
@@ -47,9 +43,9 @@ namespace FractalBench
             ConcurrentQueue<int> bitmapData3 = new ConcurrentQueue<int>();
 
             listOfBitmaps.Add(writeableBmp0);
-            //listOfBitmaps.Add(writeableBmp1);
-            //listOfBitmaps.Add(writeableBmp2);
-            //listOfBitmaps.Add(writeableBmp3);
+            listOfBitmaps.Add(writeableBmp1);
+            listOfBitmaps.Add(writeableBmp2);
+            listOfBitmaps.Add(writeableBmp3);
 
             Parallel.For(i, 2, new ParallelOptions { MaxDegreeOfParallelism = noOfThreads, }, p =>
            {
@@ -72,24 +68,24 @@ namespace FractalBench
                        startingSectionY = 0;
                        endingSectionX = 400;
                        endingSectionY = 200;
-                        // listToUse = bitmapData1;
-                        break;
+                       listToUse = bitmapData1;
+                       break;
 
                    case 2:
                        startingSectionX = 0;
                        startingSectionY = 200;
                        endingSectionX = 200;
                        endingSectionY = 400;
-                        //  listToUse = bitmapData2;
-                        break;
+                       listToUse = bitmapData2;
+                       break;
 
                    case 3:
                        startingSectionX = 200;
                        startingSectionY = 200;
                        endingSectionX = 400;
                        endingSectionY = 400;
-                        //   listToUse = bitmapData3;
-                        break;
+                       listToUse = bitmapData3;
+                       break;
                }
                for (int x = startingSectionX; x < endingSectionX; x++)
                {
@@ -114,7 +110,6 @@ namespace FractalBench
 
                        if (iterations < 1000)
                        {
-
                            listToUse.Enqueue(x);
                            listToUse.Enqueue(y);
                            listToUse.Enqueue(iterations < 1000 ? 1 : 2);
@@ -124,33 +119,33 @@ namespace FractalBench
                i++;
            });
 
-            // ADD ALL THE BITMAP DATA TO THE LIST AND THEN USE IT TO LOOP THROUGH AND RENDER ALL THE BITMAPS, TO CHANGE THE POSITION U ENED TO FIGURE OUT SOME LOOP IDK
-            //listData.Add(bitmapData0);
+            listData.Add(bitmapData0);
             listData.Add(bitmapData1);
             listData.Add(bitmapData2);
             listData.Add(bitmapData3);
 
-
-
-            int[] queueToArray = listToUse.ToArray();
-
             for (int q = 0; q < listOfBitmaps.Count; q++)
             {
                 WriteableBitmap bitmap = listOfBitmaps[q];
+                int[] queueToArray = listData[q].ToArray();
+
+                // everything below is ok
                 for (int o = 0; o < queueToArray.Length; o += 3)
                 {
                     Color color;
 
-                    if (queueToArray[0 +2].Equals(1))
+                    if (queueToArray[0 + 2].Equals(1))
                     {
                         color = Colors.DeepSkyBlue;
-                    } else
+                    }
+                    else
                     {
                         color = Colors.DeepPink;
                     }
                     bitmap.SetPixel(queueToArray[o], queueToArray[o + 1], color);
                 }
             }
+
 
             // This does not have to be multithreaded
             foreach (var bitmap in listOfBitmaps)
@@ -159,7 +154,21 @@ namespace FractalBench
                 {
                     using (bitmap.GetBitmapContext())
                     {
-                        finalResult.Blit(new Rect(0, 0, 100, 100), bitmap, new Rect(0, 0, 100, 100), WriteableBitmapExtensions.BlendMode.Additive);
+                        switch (listOfBitmaps.IndexOf(bitmap))
+                        {
+                            case 0:
+                                finalResult.Blit(new Rect(0, 0, 200, 200), bitmap, new Rect(0, 0, 200, 200), WriteableBitmapExtensions.BlendMode.Additive);
+                                break;
+                            case 1:
+                                finalResult.Blit(new Rect(200, 0, 200, 200), bitmap, new Rect(200, 0, 200, 200), WriteableBitmapExtensions.BlendMode.Additive);
+                                break;
+                            case 2:
+                                finalResult.Blit(new Rect(0, 200, 200, 200), bitmap, new Rect(0, 200, 200, 200), WriteableBitmapExtensions.BlendMode.Additive);
+                                break;
+                            case 3:
+                                finalResult.Blit(new Rect(200, 200, 200, 200), bitmap, new Rect(200, 200, 200, 200), WriteableBitmapExtensions.BlendMode.Additive);
+                                break;
+                        }
                     }
                 }
             }
