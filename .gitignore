@@ -12,3 +12,4 @@ FractalBench/obj/x86/Debug/ResourceHandlingTask.state
 FractalBench/obj/x86/Debug/resources.resfiles
 FractalBench/obj/x86/Debug/resources.resfiles.intermediate
 FractalBench/obj/x86/Debug/XamlSaveStateFile.xml
+*.intermediate
