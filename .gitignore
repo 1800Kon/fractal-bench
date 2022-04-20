@@ -492,3 +492,8 @@ FractalBench/obj/x86/Debug/resources.resfiles.intermediate
 FractalBench/obj/x86/Debug/unfiltered.layout.resfiles
 FractalBench/obj/x86/Debug/unfiltered.layout.resfiles.intermediate
 FractalBench/obj/x86/Debug/XamlSaveStateFile.xml
+FractalBench/obj/FractalBench.csproj.nuget.dgspec.json
+FractalBench/obj/FractalBench.csproj.nuget.g.props
+FractalBench/obj/FractalBench.csproj.nuget.g.targets
+FractalBench/obj/project.assets.json
+FractalBench/obj/project.nuget.cache
