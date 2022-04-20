@@ -57,7 +57,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Series" />
     </RootType>
-    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries">
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries">
       <RootProperty Name="Title" />
       <RootProperty Name="Margin" />
       <RootProperty Name="IndependentValuePath" />
