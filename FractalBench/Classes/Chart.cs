@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FractalBench.Classes
+namespace FractalBench
 {
-    class Chart
+    public class Chart
     {
+        public int Utilization { get; set; }
+        public int Time { get; set; }
     }
 }
