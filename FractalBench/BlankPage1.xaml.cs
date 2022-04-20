@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using WinRTXamlToolkit.Controls.DataVisualization.Charting;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -31,13 +32,13 @@ namespace FractalBench
         {
             this.InitializeComponent();
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            TextBlock1.Text = populateCPUInfo().ToString();
+            TextBlock1.Text = PopulateCPUInfo().ToString();
+            LoadChartContents();
         }
 
-        private int populateCPUInfo()
+        private int PopulateCPUInfo()
         {
             int process = 0;
             // Creates and returns a CpuUsage instance that can be used to query the CPU time on this operating system.
@@ -48,6 +49,17 @@ namespace FractalBench
                 break;
             }
             return process;
+        }
+
+        private void LoadChartContents()
+        {
+            List<Chart> lstSource = new List<Chart>();
+            for (int i = 0; i < 10; i++)
+            {
+                lstSource.Add(new Chart() { Utilization = i, Time = i });
+            }
+
+            (LineChart1.Series[0] as LineSeries).ItemsSource = lstSource;
         }
     }
 }
