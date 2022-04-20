@@ -19,7 +19,7 @@ namespace FractalBench
 
         private void Render_Click(object sender, RoutedEventArgs e)
         {
-            CreateFractal(400, 400, 4);
+            CreateFractal(400, 400, 2);
         }
 
         private void CreateFractal(int height, int width, int noOfThreads)
