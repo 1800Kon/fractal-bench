@@ -106,13 +106,13 @@ namespace FractalBench
                            {
                                break;
                            }
-                       } while (iterations < 1000);
+                       } while (iterations < 10000);
 
-                       if (iterations < 1000)
+                       if (iterations < 10000)
                        {
                            listToUse.Enqueue(x);
                            listToUse.Enqueue(y);
-                           listToUse.Enqueue(iterations < 1000 ? 1 : 2);
+                           listToUse.Enqueue(iterations < 10000 ? 1 : 2);
                        }
                    }
                }
