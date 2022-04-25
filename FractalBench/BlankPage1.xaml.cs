@@ -1,6 +1,7 @@
 ﻿using Org.Mentalis.Utilities;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -35,6 +36,13 @@ namespace FractalBench
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             TextBlock1.Text = PopulateCPUInfo().ToString();
+
+            timing.Text = checkTime().ToString();
+            //var time = checkTime();
+            //for (int y = 0; y < time; y++)
+            //{
+            //    LoadChartContents(time);
+            //}
             LoadChartContents();
         }
 
@@ -51,14 +59,30 @@ namespace FractalBench
             return process;
         }
 
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private int checkTime()
+        {
+            int datetime = DateTime.Now.Millisecond;
+            return datetime;
+        }
+
         private void LoadChartContents()
         {
-            List<Chart> lstSource = new List<Chart>();
-            for (int i = 0; i < 10; i++)
-            {
-                lstSource.Add(new Chart() { Utilization = i, Time = i });
-            }
+            int time = checkTime();
 
+            var data = PopulateCPUInfo();
+
+            List<Chart> lstSource = new List<Chart>();
+
+            for (int i = 0; i < data; i++, time++)
+            {
+                lstSource.Add(new Chart() { Utilization = data, Time = time });
+            }
             (LineChart1.Series[0] as LineSeries).ItemsSource = lstSource;
         }
     }
