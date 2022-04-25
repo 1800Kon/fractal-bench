@@ -10,9 +10,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button Content="Button" Margin="459,577,0,0" VerticalAlignment="Top" FontSize="140" Click="Button_Click"/>
-        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="459,313,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="110"/>
-        <Charting:Chart x:Name="LineChart" Margin="35,596,609,27">
+        <Button Content="Button" Margin="25,162,0,0" VerticalAlignment="Top" FontSize="140" Click="Button_Click"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="110"/>
+        <Charting:Chart x:Name="LineChart1" Margin="63,420,131,251">
             <Charting:LineSeries Title="CPU results" Margin="0" IndependentValuePath="Utilization" DependentValuePath="Time" IsSelectionEnabled="True"/>
         </Charting:Chart>
     </Grid>

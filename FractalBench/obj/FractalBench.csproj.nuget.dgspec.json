@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\konst\\Desktop\\Uni\\fractal-bench\\FractalBench\\FractalBench.csproj": {}
+    "C:\\Users\\Tung Do\\Documents\\GitHub\\fractal-bench\\FractalBench\\FractalBench.csproj": {}
   },
   "projects": {
-    "C:\\Users\\konst\\Desktop\\Uni\\fractal-bench\\FractalBench\\FractalBench.csproj": {
+    "C:\\Users\\Tung Do\\Documents\\GitHub\\fractal-bench\\FractalBench\\FractalBench.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\konst\\Desktop\\Uni\\fractal-bench\\FractalBench\\FractalBench.csproj",
+        "projectUniqueName": "C:\\Users\\Tung Do\\Documents\\GitHub\\fractal-bench\\FractalBench\\FractalBench.csproj",
         "projectName": "FractalBench",
-        "projectPath": "C:\\Users\\konst\\Desktop\\Uni\\fractal-bench\\FractalBench\\FractalBench.csproj",
-        "packagesPath": "C:\\Users\\konst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\konst\\Desktop\\Uni\\fractal-bench\\FractalBench\\obj\\",
+        "projectPath": "C:\\Users\\Tung Do\\Documents\\GitHub\\fractal-bench\\FractalBench\\FractalBench.csproj",
+        "packagesPath": "C:\\Users\\Tung Do\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tung Do\\Documents\\GitHub\\fractal-bench\\FractalBench\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\konst\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tung Do\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -41,11 +41,23 @@
           "dependencies": {
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
-              "version": "[6.2.12, )"
+              "version": "[6.2.13, )"
+            },
+            "Microsoft.Win32.Registry": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "WinRTXamlToolkit.Controls.DataVisualization.UWP": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             },
             "WriteableBitmapEx": {
               "target": "Package",
