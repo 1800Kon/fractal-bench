@@ -34,11 +34,29 @@
     <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\system.drawing.common\6.0.0\lib\netstandard2.0\System.Drawing.Common.dll">
       <PackagePath>System.Drawing.Common.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit\2.3.0\lib\uap10.0\WinRTXamlToolkit.dll">
+      <PackagePath>WinRTXamlToolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit.controls.datavisualization\2.3.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.dll">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\writeablebitmapex\1.6.8\lib\uap\WriteableBitmapEx.Uwp.dll">
       <PackagePath>WriteableBitmapEx.Uwp.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit\2.3.0\lib\uap10.0\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
+      <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit\2.3.0\lib\uap10.0\WinRTXamlToolkit\Properties\WinRTXamlToolkit.rd.xml">
+      <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit.controls.datavisualization\2.3.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit.controls.datavisualization\2.3.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.rd.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Assets\pepe1.png">
       <PackagePath>Assets\pepe1.png</PackagePath>

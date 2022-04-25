@@ -13,7 +13,6 @@
         "packagesPath": "C:\\Users\\konst\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\konst\\Desktop\\Uni\\fractal-bench\\FractalBench\\obj\\",
         "projectStyle": "PackageReference",
-        "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
@@ -32,20 +31,30 @@
         },
         "frameworks": {
           "uap10.0.17763": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
         "uap10.0.17763": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.12, )"
             },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "WinRTXamlToolkit.Controls.DataVisualization.UWP": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             },
             "WriteableBitmapEx": {
               "target": "Package",

@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>22994C036B7F0A6A814375BE5C5C2B73EAEE63D9B4D21EE4CC3400ACBF8CFBDA</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>E66D94EF346118E2F9563D8E9C3B01720835CDF6E8E1F55E966BE0EECA78688F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>7a28b5af-4475-4cd2-973a-22ac875fa49c_1.0.0.0_x86__wbcvcg4bw3z4c</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>7a28b5af-4475-4cd2-973a-22ac875fa49c_wbcvcg4bw3z4c!App</RegisteredUserModeAppID>
     <RegisteredPackageID>7a28b5af-4475-4cd2-973a-22ac875fa49c</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-04-12T11:58:12.237</Modified>
+      <Modified>2022-04-25T15:54:48.101</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\FractalBench.exe">
       <PackagePath>entrypoint\FractalBench.exe</PackagePath>
-      <Modified>2022-04-12T11:58:11.839</Modified>
+      <Modified>2022-04-25T15:54:46.187</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -46,6 +46,14 @@
       <PackagePath>System.Drawing.Common.dll</PackagePath>
       <Modified>2021-10-22T23:48:12.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit\2.3.0\lib\uap10.0\WinRTXamlToolkit.dll">
+      <PackagePath>WinRTXamlToolkit.dll</PackagePath>
+      <Modified>2017-02-12T12:18:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit.controls.datavisualization\2.3.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.dll">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
+      <Modified>2017-02-12T12:18:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\writeablebitmapex\1.6.8\lib\uap\WriteableBitmapEx.Uwp.dll">
       <PackagePath>WriteableBitmapEx.Uwp.dll</PackagePath>
       <Modified>2021-08-12T10:48:52.000</Modified>
@@ -53,6 +61,22 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-02T03:52:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit\2.3.0\lib\uap10.0\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
+      <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
+      <Modified>2017-02-12T12:18:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit\2.3.0\lib\uap10.0\WinRTXamlToolkit\Properties\WinRTXamlToolkit.rd.xml">
+      <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.rd.xml</PackagePath>
+      <Modified>2017-02-12T12:18:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit.controls.datavisualization\2.3.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</PackagePath>
+      <Modified>2017-02-12T12:18:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\winrtxamltoolkit.controls.datavisualization\2.3.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.rd.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.rd.xml</PackagePath>
+      <Modified>2017-02-12T12:18:54.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Assets\pepe1.png">
       <PackagePath>Assets\pepe1.png</PackagePath>
@@ -102,15 +126,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\FractalBench.xr.xml">
       <PackagePath>FractalBench.xr.xml</PackagePath>
-      <Modified>2022-03-30T17:16:48.242</Modified>
+      <Modified>2022-04-25T15:54:46.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-04-01T15:08:14.352</Modified>
+      <Modified>2022-04-25T15:54:46.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-04-01T15:08:14.352</Modified>
+      <Modified>2022-04-25T15:54:46.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -118,11 +142,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-03-30T16:10:15.305</Modified>
+      <Modified>2022-04-25T15:54:46.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\Core\FractalBench.exe">
       <PackagePath>FractalBench.exe</PackagePath>
-      <Modified>2022-04-12T11:58:12.233</Modified>
+      <Modified>2022-04-25T15:54:48.093</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
