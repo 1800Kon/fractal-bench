@@ -38,6 +38,11 @@ namespace FractalBench
             TextBlock1.Text = PopulateCPUInfo().ToString();
 
             timing.Text = checkTime().ToString();
+            //var time = checkTime();
+            //for (int y = 0; y < time; y++)
+            //{
+            //    LoadChartContents(time);
+            //}
             LoadChartContents();
         }
 
