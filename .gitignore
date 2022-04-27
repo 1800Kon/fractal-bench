@@ -497,3 +497,6 @@ FractalBench/obj/FractalBench.csproj.nuget.g.props
 FractalBench/obj/FractalBench.csproj.nuget.g.targets
 FractalBench/obj/project.assets.json
 FractalBench/obj/project.nuget.cache
+FractalBench/obj/x64/Debug/App.g.i.cs
+FractalBench/obj/x64/Debug/MainPage.g.i.cs
+FractalBench/obj/x64/Debug/XamlSaveStateFile.xml
