@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tung Do\\Documents\\GitHub\\fractal-bench\\FractalBench\\FractalBench.csproj": {}
+    "D:\\Github\\fractal-bench\\FractalBench\\FractalBench.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tung Do\\Documents\\GitHub\\fractal-bench\\FractalBench\\FractalBench.csproj": {
+    "D:\\Github\\fractal-bench\\FractalBench\\FractalBench.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tung Do\\Documents\\GitHub\\fractal-bench\\FractalBench\\FractalBench.csproj",
+        "projectUniqueName": "D:\\Github\\fractal-bench\\FractalBench\\FractalBench.csproj",
         "projectName": "FractalBench",
-        "projectPath": "C:\\Users\\Tung Do\\Documents\\GitHub\\fractal-bench\\FractalBench\\FractalBench.csproj",
-        "packagesPath": "C:\\Users\\Tung Do\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tung Do\\Documents\\GitHub\\fractal-bench\\FractalBench\\obj\\",
+        "projectPath": "D:\\Github\\fractal-bench\\FractalBench\\FractalBench.csproj",
+        "packagesPath": "C:\\Users\\Sande\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\fractal-bench\\FractalBench\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tung Do\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sande\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

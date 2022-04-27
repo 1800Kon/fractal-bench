@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>KONSTAN</Machine>
-    <WindowsUser>konst</WindowsUser>
+    <Machine>MSI</Machine>
+    <WindowsUser>Sande</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>7a28b5af-4475-4cd2-973a-22ac875fa49c</PackageIdentityName>
     <PackageIdentityPublisher>CN=konst</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Github\fractal-bench\FractalBench\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>22994C036B7F0A6A814375BE5C5C2B73EAEE63D9B4D21EE4CC3400ACBF8CFBDA</RegisteredManifestChecksum>
+    <LayoutDir>D:\Github\fractal-bench\FractalBench\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>19C03356ED6E87FAA811D278D28B31C678095BD9EEE25755C91BDE9D2F715B46</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>7a28b5af-4475-4cd2-973a-22ac875fa49c_1.0.0.0_x86__wbcvcg4bw3z4c</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>7a28b5af-4475-4cd2-973a-22ac875fa49c_wbcvcg4bw3z4c!App</RegisteredUserModeAppID>
     <RegisteredPackageID>7a28b5af-4475-4cd2-973a-22ac875fa49c</RegisteredPackageID>
@@ -27,26 +27,42 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-04-01T14:50:32.088</Modified>
+      <Modified>2022-04-27T10:37:42.548</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\FractalBench.exe">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\FractalBench.exe">
       <PackagePath>entrypoint\FractalBench.exe</PackagePath>
-      <Modified>2022-04-01T14:50:31.694</Modified>
+      <Modified>2022-04-27T10:37:40.273</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\microsoft.win32.registry\5.0.0\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll">
+      <PackagePath>Microsoft.Win32.Registry.dll</PackagePath>
+      <Modified>2020-10-19T18:38:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.13\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2021-02-04T23:15:46.000</Modified>
+      <Modified>2021-10-10T06:49:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\system.drawing.common\6.0.0\lib\netstandard2.0\System.Drawing.Common.dll">
+    <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\system.drawing.common\6.0.0\lib\netstandard2.0\System.Drawing.Common.dll">
       <PackagePath>System.Drawing.Common.dll</PackagePath>
       <Modified>2021-10-22T23:48:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\.nuget\packages\writeablebitmapex\1.6.8\lib\uap\WriteableBitmapEx.Uwp.dll">
+    <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2020-02-19T10:05:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\winrtxamltoolkit\2.3.0\lib\uap10.0\WinRTXamlToolkit.dll">
+      <PackagePath>WinRTXamlToolkit.dll</PackagePath>
+      <Modified>2017-02-12T12:18:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\winrtxamltoolkit.controls.datavisualization\2.3.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization.dll">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
+      <Modified>2017-02-12T12:18:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\writeablebitmapex\1.6.8\lib\uap\WriteableBitmapEx.Uwp.dll">
       <PackagePath>WriteableBitmapEx.Uwp.dll</PackagePath>
       <Modified>2021-08-12T10:48:52.000</Modified>
     </AppxPackagedFile>
@@ -54,129 +70,153 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-02T03:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Assets\pepe1.png">
+    <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\winrtxamltoolkit\2.3.0\lib\uap10.0\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
+      <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
+      <Modified>2017-02-12T12:18:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\winrtxamltoolkit\2.3.0\lib\uap10.0\WinRTXamlToolkit\Properties\WinRTXamlToolkit.rd.xml">
+      <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.rd.xml</PackagePath>
+      <Modified>2017-02-12T12:18:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\winrtxamltoolkit.controls.datavisualization\2.3.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</PackagePath>
+      <Modified>2017-02-12T12:18:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\winrtxamltoolkit.controls.datavisualization\2.3.0\lib\uap10.0\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.rd.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.rd.xml</PackagePath>
+      <Modified>2017-02-12T12:18:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\Assets\pepe1.png">
       <PackagePath>Assets\pepe1.png</PackagePath>
-      <Modified>2022-03-28T15:14:23.584</Modified>
+      <Modified>2022-04-14T15:13:32.458</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Assets\pepe2.png">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\Assets\pepe2.png">
       <PackagePath>Assets\pepe2.png</PackagePath>
-      <Modified>2022-03-28T15:14:36.490</Modified>
+      <Modified>2022-04-14T15:13:32.459</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2022-03-28T14:37:11.889</Modified>
+      <Modified>2022-04-14T15:13:32.455</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-28T14:37:11.891</Modified>
+      <Modified>2022-04-14T15:13:32.455</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-28T14:37:11.892</Modified>
+      <Modified>2022-04-14T15:13:32.456</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-28T14:37:11.892</Modified>
+      <Modified>2022-04-14T15:13:32.456</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-28T14:37:11.893</Modified>
+      <Modified>2022-04-14T15:13:32.457</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-28T14:37:11.893</Modified>
+      <Modified>2022-04-14T15:13:32.457</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-03-28T14:37:11.893</Modified>
+      <Modified>2022-04-14T15:13:32.458</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2022-03-28T14:40:16.938</Modified>
+      <Modified>2022-04-14T15:13:32.467</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\FractalBench.xr.xml">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\FractalBench.xr.xml">
       <PackagePath>FractalBench.xr.xml</PackagePath>
-      <Modified>2022-03-30T17:16:48.242</Modified>
+      <Modified>2022-04-27T10:37:40.111</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-04-01T14:50:31.624</Modified>
+      <Modified>2022-04-27T10:37:40.184</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\BlankPage1.xbf">
+      <PackagePath>BlankPage1.xbf</PackagePath>
+      <Modified>2022-04-27T10:37:40.184</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\ContentDialog1.xbf">
+      <PackagePath>ContentDialog1.xbf</PackagePath>
+      <Modified>2022-04-27T10:37:40.184</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-04-01T14:50:31.624</Modified>
+      <Modified>2022-04-27T10:37:40.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2020-12-02T01:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-03-30T16:10:15.305</Modified>
+      <Modified>2022-04-27T10:37:41.144</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\Core\FractalBench.exe">
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\Core\FractalBench.exe">
       <PackagePath>FractalBench.exe</PackagePath>
-      <Modified>2022-04-01T14:50:32.084</Modified>
+      <Modified>2022-04-27T10:37:42.539</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Sande\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
-      <Version>2.2.29713.2</Version>
+      <Version>2.2.30527.2</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.29713.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.30527.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Sande\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Sande\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
-      <Version>2.2.29713.2</Version>
+      <Version>2.2.30527.2</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.29713.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.30527.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Sande\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Sande\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
-      <Version>2.2.29713.2</Version>
+      <Version>2.2.30527.2</Version>
       <Architecture>arm</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.29713.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.30527.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Sande\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Sande\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
-      <Version>2.2.29301.2</Version>
+      <Version>2.2.30316.1</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.30316.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Sande\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Sande\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
-      <Version>2.2.29301.2</Version>
+      <Version>2.2.30316.1</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.30316.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Sande\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Sande\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
-      <Version>2.2.29301.2</Version>
+      <Version>2.2.30316.1</Version>
       <Architecture>arm</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.12\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.30316.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Sande\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
