@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="FractalBench.BlankPage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FractalBench"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView Content="NavigationView">
+            <!--<NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" Content="Home" Tag="Home_Page" />
+                <NavigationViewItem Icon="Shop" Content="Shop" Tag="Shop_Page" />
+                <NavigationViewItem Content="Shopping Cart" Tag="Cart_Page">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph=" [Insert Hex Decimal Value Here. See Segoe MDL2 below for details.] "/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="Message" Content="Message" Tag="Message_Page" />
+                <NavigationViewItem Icon="Print" Content="Print" Tag="Print_Page" />
+            </NavigationView.MenuItems>-->
+        </NavigationView>
+    </Grid>
+</Page>

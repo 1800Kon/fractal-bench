@@ -10,11 +10,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button Content="Button" Margin="25,162,0,0" VerticalAlignment="Top" FontSize="140" Click="Button_Click"/>
-        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="110"/>
-        <Charting:Chart x:Name="LineChart1" Margin="63,420,131,251">
+        <Button Content="Button" Margin="493,84,0,0" VerticalAlignment="Top" FontSize="140" Click="Button_Click"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="97,381,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="110"/>
+        <Charting:Chart x:Name="LineChart1" Margin="97,606,97,65">
             <Charting:LineSeries Title="CPU results" Margin="0" IndependentValuePath="Time" DependentValuePath="Utilization" IsSelectionEnabled="True"/>
         </Charting:Chart>
-        <TextBlock x:Name="timing" HorizontalAlignment="Left" Margin="876,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="110"/>
+        <TextBlock x:Name="timing" HorizontalAlignment="Left" Margin="900,381,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="110"/>
+        
+        <NavigationView Content="NavigationView1">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Fractal" Tag="MainPage" />
+                <NavigationViewItem Content="Chart" Tag="BlankPage2" />
+            </NavigationView.MenuItems>
+        </NavigationView>
     </Grid>
 </Page>

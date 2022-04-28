@@ -79,10 +79,13 @@ namespace FractalBench
 
             List<Chart> lstSource = new List<Chart>();
 
-            for (int i = 0; i < data; i++, time++)
-            {
-                lstSource.Add(new Chart() { Utilization = data, Time = time });
-            }
+            //for (int i = 0; i < data; i++, time++)
+            //{
+            //    lstSource.Add(new Chart() { Utilization = data, Time = time });
+            //}
+            lstSource.Add(new Chart() { Utilization = 2, Time = 4 });
+            lstSource.Add(new Chart() { Utilization = 6, Time = 7 });
+            lstSource.Add(new Chart() { Utilization = 5, Time = 9 });
             (LineChart1.Series[0] as LineSeries).ItemsSource = lstSource;
         }
     }

@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-04-27T10:37:42.548</Modified>
+      <Modified>2022-04-27T14:48:36.489</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\FractalBench.exe">
       <PackagePath>entrypoint\FractalBench.exe</PackagePath>
-      <Modified>2022-04-27T10:37:40.273</Modified>
+      <Modified>2022-04-27T14:48:35.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sande\.nuget\packages\microsoft.win32.registry\5.0.0\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll">
       <PackagePath>Microsoft.Win32.Registry.dll</PackagePath>
@@ -134,23 +134,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\FractalBench.xr.xml">
       <PackagePath>FractalBench.xr.xml</PackagePath>
-      <Modified>2022-04-27T10:37:40.111</Modified>
+      <Modified>2022-04-27T14:47:03.623</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-04-27T10:37:40.184</Modified>
+      <Modified>2022-04-27T14:48:35.816</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\BlankPage1.xbf">
       <PackagePath>BlankPage1.xbf</PackagePath>
-      <Modified>2022-04-27T10:37:40.184</Modified>
+      <Modified>2022-04-27T14:48:35.816</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\ContentDialog1.xbf">
-      <PackagePath>ContentDialog1.xbf</PackagePath>
-      <Modified>2022-04-27T10:37:40.184</Modified>
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\BlankPage2.xbf">
+      <PackagePath>BlankPage2.xbf</PackagePath>
+      <Modified>2022-04-27T14:48:35.816</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-04-27T10:37:40.185</Modified>
+      <Modified>2022-04-27T14:48:35.816</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -158,11 +158,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-04-27T10:37:41.144</Modified>
+      <Modified>2022-04-27T14:01:18.583</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\Core\FractalBench.exe">
       <PackagePath>FractalBench.exe</PackagePath>
-      <Modified>2022-04-27T10:37:42.539</Modified>
+      <Modified>2022-04-27T14:48:36.485</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

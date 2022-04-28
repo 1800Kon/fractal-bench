@@ -54,7 +54,6 @@ D:\Github\fractal-bench\FractalBench\bin\x86\Debug\WinRTXamlToolkit.Controls.Dat
 D:\Github\fractal-bench\FractalBench\bin\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.rd.xml
 D:\Github\fractal-bench\FractalBench\bin\x86\Debug\App.xbf
 D:\Github\fractal-bench\FractalBench\bin\x86\Debug\BlankPage1.xbf
-D:\Github\fractal-bench\FractalBench\bin\x86\Debug\ContentDialog1.xbf
 D:\Github\fractal-bench\FractalBench\bin\x86\Debug\MainPage.xbf
 D:\Github\fractal-bench\FractalBench\bin\x86\Debug\FractalBench.xr.xml
 D:\Github\fractal-bench\FractalBench\bin\x86\Debug\FractalBench.exe
@@ -80,16 +79,12 @@ D:\Github\fractal-bench\FractalBench\obj\x86\Debug\MainPage.g.i.cs
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\MainPage.g.cs
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\BlankPage1.g.i.cs
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\BlankPage1.g.cs
-D:\Github\fractal-bench\FractalBench\obj\x86\Debug\ContentDialog1.g.i.cs
-D:\Github\fractal-bench\FractalBench\obj\x86\Debug\ContentDialog1.g.cs
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\XamlTypeInfo.g.cs
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\App.xaml
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\BlankPage1.xaml
-D:\Github\fractal-bench\FractalBench\obj\x86\Debug\ContentDialog1.xaml
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\MainPage.xaml
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\App.xbf
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\BlankPage1.xbf
-D:\Github\fractal-bench\FractalBench\obj\x86\Debug\ContentDialog1.xbf
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\MainPage.xbf
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\XamlSaveStateFile.xml
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\FractalBench.csproj.CoreCompileInputs.cache
@@ -120,3 +115,8 @@ D:\Github\fractal-bench\FractalBench\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\ProjectArchitectures.txt
 D:\Github\fractal-bench\FractalBench\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424779200000000.json
+D:\Github\fractal-bench\FractalBench\bin\x86\Debug\BlankPage2.xbf
+D:\Github\fractal-bench\FractalBench\obj\x86\Debug\BlankPage2.g.i.cs
+D:\Github\fractal-bench\FractalBench\obj\x86\Debug\BlankPage2.g.cs
+D:\Github\fractal-bench\FractalBench\obj\x86\Debug\BlankPage2.xaml
+D:\Github\fractal-bench\FractalBench\obj\x86\Debug\BlankPage2.xbf

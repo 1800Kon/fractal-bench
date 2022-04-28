@@ -36,6 +36,14 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Series" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
+      <RootProperty Name="Content" />
+      <RootProperty Name="MenuItems" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItem">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Tag" />
+    </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries">
       <RootProperty Name="Title" />
       <RootProperty Name="Margin" />
@@ -44,15 +52,7 @@
       <RootProperty Name="IsSelectionEnabled" />
     </RootType>
     <RootType FullName="FractalBench.BlankPage1" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog">
-      <RootProperty Name="Title" />
-      <RootProperty Name="PrimaryButtonText" />
-      <RootProperty Name="SecondaryButtonText" />
-      <RootProperty Name="Content" />
-      <RootEvent Name="PrimaryButtonClick" />
-      <RootEvent Name="SecondaryButtonClick" />
-    </RootType>
-    <RootType FullName="FractalBench.ContentDialog1" />
+    <RootType FullName="FractalBench.BlankPage2" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />

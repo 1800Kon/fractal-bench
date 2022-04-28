@@ -109,8 +109,8 @@
     <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\BlankPage1.xbf">
       <PackagePath>BlankPage1.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\ContentDialog1.xbf">
-      <PackagePath>ContentDialog1.xbf</PackagePath>
+    <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\BlankPage2.xbf">
+      <PackagePath>BlankPage2.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\fractal-bench\FractalBench\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
