@@ -1,6 +1,7 @@
 ﻿using Org.Mentalis.Utilities;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -28,14 +29,27 @@ namespace FractalBench
     {
         bool iscontinue = true;
         private static CpuUsage cpu;
+        List<Chart> chart = new List<Chart>();
+        ObservableCollection<Chart> observableCollection = new ObservableCollection<Chart>();
+        public ObservableCollection<Chart> LstSource
+        {
+            get { return observableCollection; }
+        }
         public BlankPage1()
         {
             this.InitializeComponent();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            TextBlock1.Text = PopulateCPUInfo().ToString();
-            LoadChartContents();
+            int i = PopulateCPUInfo();
+            LoadChart(i);
+            TextBlock1.Text = i.ToString();
+        }
+
+        private void BlankPage1_Load(object sender, EventArgs e) 
+        {
+            this.LineChart1.Series.Clear();
+            this.LineChart1.Title = "CPU Usage";
         }
 
         private int PopulateCPUInfo()
@@ -51,15 +65,10 @@ namespace FractalBench
             return process;
         }
 
-        private void LoadChartContents()
+        private void LoadChart(int processUsage)
         {
-            List<Chart> lstSource = new List<Chart>();
-            for (int i = 0; i < 10; i++)
-            {
-                lstSource.Add(new Chart() { Utilization = i, Time = i });
-            }
-
-            (LineChart1.Series[0] as LineSeries).ItemsSource = lstSource;
+            observableCollection.Add(new Chart { Time = DateTime.Now, Utilization = processUsage });
+            (LineChart1.Series[0] as LineSeries).ItemsSource = observableCollection;
         }
     }
 }

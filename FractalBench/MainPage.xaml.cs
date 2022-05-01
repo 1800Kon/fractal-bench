@@ -180,19 +180,7 @@ namespace FractalBench
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            LoadChartContents();
 
-        }
-
-        private void LoadChartContents()
-        {
-            List<Chart> lstSource = new List<Chart>();
-            lstSource.Add(new Chart() { Utilization = 30, Time = 1 });
-            lstSource.Add(new Chart() { Utilization = 25, Time = 2 });
-            lstSource.Add(new Chart() { Utilization = 35, Time = 3 });
-            lstSource.Add(new Chart() { Utilization = 20, Time = 4 });
-            lstSource.Add(new Chart() { Utilization = 15, Time = 5 });
-            (LineChart.Series[0] as LineSeries).ItemsSource = lstSource;
         }
     }
 }
