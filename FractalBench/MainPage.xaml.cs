@@ -1,13 +1,11 @@
 ﻿using FractalBench.Classes;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
-using Image = System.Drawing.Image;
 
 namespace FractalBench
 {
@@ -30,15 +28,8 @@ namespace FractalBench
             var startingSectionY = 0;
             var endingSectionX = 0;
             var endingSectionY = 0;
-
-            var bitmap = new Bitmap(width, height);
-            var rect = new Rectangle(0, 0, width, height);
-            var bitmapData = bitmap.LockBits(rect, ImageLockMode.ReadWrite, bitmap.PixelFormat);
-            var depth = Image.GetPixelFormatSize(bitmapData.PixelFormat) / 8; // this is something which might need to be changed
-            var buffer = new byte[bitmapData.Width * bitmapData.Height * depth];
-            
-            // Copy all the data from the bitmap to the buffer
-            Marshal.Copy(bitmapData.Scan0, buffer, 0, buffer.Length);
+            var bitmap = new WriteableBitmap(width, height);
+            var buffer = bitmap.PixelBuffer.ToArray();
             
             ThreadPool.SetMaxThreads(noOfThreads, noOfThreads);
             ThreadPool.SetMinThreads(noOfThreads, noOfThreads);
@@ -75,27 +66,27 @@ namespace FractalBench
                         endingSectionY = 400;
                         break;
                 }
-                ThreadPool.QueueUserWorkItem(a => CreateSingleSection(startingSectionX, startingSectionY, endingSectionX, endingSectionY, height, width, buffer, depth));
+                ThreadPool.QueueUserWorkItem(a => CreateSingleSection(startingSectionX, startingSectionY, endingSectionX, endingSectionY, height, width, buffer));
             }
-            Marshal.Copy(buffer, 0, bitmapData.Scan0, buffer.Length);
-            bitmap.UnlockBits(bitmapData);
-            bitmap.Save(@"E:\fractal\fractal.jpg", ImageFormat.Jpeg);
+            Thread.Sleep(5000);
+            buffer.CopyTo(bitmap.PixelBuffer);
+            fractalImage.Source = bitmap;
         }
 
-        private static void CreateSingleSection(int startingSectionX, int startingSectionY, int endingSectionX, int endingSectionY, int height, int width, byte[] buffer, int depth)
+        private static void CreateSingleSection(int startingSectionX, int startingSectionY, int endingSectionX, int endingSectionY, int height, int width, IList<byte> buffer)
         {
             for (var x = startingSectionX; x < endingSectionX; x++)
             {
                 for (var y = startingSectionY; y < endingSectionY; y++)
                 {
-                    var a = (double)(x - width / 4) / (width / 4);
-                    var b = (double)(y - height / 4) / (height / 4);
+                    var a = (double)(x - width / 2.0) / (width / 4.0);
+                    var b = (double)(y - height / 2.0) / (height / 4.0);
                     var c = new ComplexNumber(a, b);
                     var z = new ComplexNumber(0, 0);
                     var iterations = 0;
                     
                     do
-                    {
+                    { 
                         iterations++;
                         z.Square();
                         z.Add(c);
@@ -103,10 +94,23 @@ namespace FractalBench
                         {
                             break;
                         }
-                    } while (iterations < 10000);
-                    var offset = ((y * width) + x) * depth;
-                    var o = 0.2126 * buffer[offset + 0] + 0.7152 * buffer[offset + 1] + 0.0722 * buffer[offset + 2];
-                    buffer[offset + 0] = buffer[offset + 1] = buffer[offset + 2] = (byte)o;
+                    } while (iterations < 1000);
+                    
+                    // Color the bitmap
+                    if (iterations < 1000)
+                    {
+                        var color = iterations * 255 / 1000;
+                        buffer[x + y * width] = 100;
+                        buffer[x + y * width + 1] = 100;
+                        buffer[x + y * width + 2] = 255;
+                    }
+                    else
+                    {
+                        const int color = 240;
+                        buffer[x + y * width] = color;
+                        buffer[x + y * width] = color;
+                        buffer[x + y * width] = 255;
+                    }
                 }
             }
         }
