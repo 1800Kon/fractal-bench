@@ -26,7 +26,7 @@
         <Image HorizontalAlignment="Left" Height="100" Margin="496,752,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBlock HorizontalAlignment="Left" Margin="1320,614,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="106" FontSize="36" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
         <Charting:Chart x:Name="LineChart" Margin="35,607,215,39">
-            <Charting:ColumnSeries Title="CPU results" Margin="0" IndependentValuePath="Utilization" DependentValuePath="Time" IsSelectionEnabled="True"/>
+            <Charting:LineSeries Title="CPU results" Margin="0" IndependentValuePath="Utilization" DependentValuePath="Time" IsSelectionEnabled="True"/>
         </Charting:Chart>
         <TextBlock HorizontalAlignment="Left" Margin="1355,614,0,0" TextWrapping="Wrap" Text="%" VerticalAlignment="Top" Height="40" Width="33" FontSize="36"/>
     </Grid>

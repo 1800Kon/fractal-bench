@@ -1,7 +1,14 @@
 ﻿using FractalBench.Classes;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading;
+=======
+using System.Threading.Tasks;
+using System.Timers;
+using Windows.Foundation;
+using Windows.UI;
+>>>>>>> Tom's
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
@@ -19,8 +26,12 @@ namespace FractalBench
 
         private void Render_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             CreateFractal(400, 400, 4);
 
+=======
+            CreateFractal(400, 400, 2);
+>>>>>>> Tom's
         }
 
         private void CreateFractal(int width, int height, int noOfThreads) {
@@ -117,9 +128,8 @@ namespace FractalBench
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            LoadChartContents();
-        }
 
+<<<<<<< HEAD
         private void LoadChartContents()
         {
             List<Chart> lstSource = new List<Chart>();
@@ -129,6 +139,8 @@ namespace FractalBench
             lstSource.Add(new Chart() { Utilization = 20, Time = 4 });
             lstSource.Add(new Chart() { Utilization = 15, Time = 5 });
             ((ColumnSeries)LineChart.Series[0]).ItemsSource = lstSource;
+=======
+>>>>>>> Tom's
         }
     }
 }
