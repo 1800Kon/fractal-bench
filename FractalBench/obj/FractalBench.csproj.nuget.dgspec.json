@@ -41,11 +41,7 @@
           "dependencies": {
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
-              "version": "[6.2.13, )"
-            },
-            "Microsoft.Win32.Registry": {
-              "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[6.2.12, )"
             },
             "System.Collections": {
               "target": "Package",
