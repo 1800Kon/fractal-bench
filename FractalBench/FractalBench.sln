@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32407.343
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractalBench", "FractalBench.csproj", "{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}"
 EndProject
@@ -15,10 +15,6 @@ Global
 		Release|ARM64 = Release|ARM64
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-		testBlankPage|ARM = testBlankPage|ARM
-		testBlankPage|ARM64 = testBlankPage|ARM64
-		testBlankPage|x64 = testBlankPage|x64
-		testBlankPage|x86 = testBlankPage|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.Debug|ARM.ActiveCfg = Debug|ARM
@@ -45,18 +41,6 @@ Global
 		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.Release|x86.ActiveCfg = Release|x86
 		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.Release|x86.Build.0 = Release|x86
 		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.Release|x86.Deploy.0 = Release|x86
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|ARM.ActiveCfg = testBlankPage|ARM
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|ARM.Build.0 = testBlankPage|ARM
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|ARM.Deploy.0 = testBlankPage|ARM
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|ARM64.ActiveCfg = testBlankPage|ARM64
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|ARM64.Build.0 = testBlankPage|ARM64
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|ARM64.Deploy.0 = testBlankPage|ARM64
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|x64.ActiveCfg = testBlankPage|x64
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|x64.Build.0 = testBlankPage|x64
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|x64.Deploy.0 = testBlankPage|x64
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|x86.ActiveCfg = testBlankPage|x86
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|x86.Build.0 = testBlankPage|x86
-		{1F271E44-A93C-4D74-9A89-02B4BFBEEE41}.testBlankPage|x86.Deploy.0 = testBlankPage|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
