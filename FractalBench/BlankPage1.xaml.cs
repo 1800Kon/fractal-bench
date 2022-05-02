@@ -29,6 +29,8 @@ namespace FractalBench
     {
         bool iscontinue = true;
         private static CpuUsage cpu;
+        Chart chart;
+
         public BlankPage1()
         {
             this.InitializeComponent();
@@ -43,7 +45,12 @@ namespace FractalBench
             //{
             //    LoadChartContents(time);
             //}
-            LoadChartContents();
+
+            int time = checkTime();
+
+            int data = PopulateCPUInfo();
+
+            LoadChartContents(time, data);
         }
 
         private int PopulateCPUInfo()
@@ -59,7 +66,6 @@ namespace FractalBench
             return process;
         }
 
-
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
 
@@ -71,22 +77,21 @@ namespace FractalBench
             return datetime;
         }
 
-        private void LoadChartContents()
+        private void LoadChartContents(int time, int data)
         {
-            int time = checkTime();
-
-            var data = PopulateCPUInfo();
-
             List<Chart> lstSource = new List<Chart>();
+            var dad = new Chart() { Utilization = data, Time = time };
+            lstSource.Add(dad);
+            (LineChart1.Series[0] as LineSeries).ItemsSource = lstSource;
 
             //for (int i = 0; i < data; i++, time++)
             //{
             //    lstSource.Add(new Chart() { Utilization = data, Time = time });
+            //    (LineChart1.Series[i++] as LineSeries).ItemsSource = lstSource;
             //}
-            lstSource.Add(new Chart() { Utilization = 2, Time = 4 });
-            lstSource.Add(new Chart() { Utilization = 6, Time = 7 });
-            lstSource.Add(new Chart() { Utilization = 5, Time = 9 });
-            (LineChart1.Series[0] as LineSeries).ItemsSource = lstSource;
+            //lstSource.Add(new Chart() { Utilization = 2, Time = 4 });
+            //lstSource.Add(new Chart() { Utilization = 6, Time = 7 });
+            //lstSource.Add(new Chart() { Utilization = 5, Time = 9 });
         }
     }
 }
