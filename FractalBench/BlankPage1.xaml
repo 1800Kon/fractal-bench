@@ -12,8 +12,9 @@
     <Grid>
         <Button Content="Button" Margin="25,162,0,0" VerticalAlignment="Top" FontSize="140" Click="Button_Click"/>
         <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="110"/>
-        <Charting:Chart x:Name="LineChart1" Margin="63,420,131,251">
+        <Charting:Chart x:Name="LineChart1" Margin="63,420,65,51">
             <Charting:LineSeries ItemsSource="{x:Bind LstSource}" Title="CPU results" Margin="0" IndependentValuePath="Time" DependentValuePath="Utilization" IsSelectionEnabled="True"/>
         </Charting:Chart>
+        <TextBlock x:Name="TextBlock2" HorizontalAlignment="Left" Margin="806,262,0,0" TextWrapping="Wrap" Text="elapsedMs" VerticalAlignment="Top" FontSize="110"/>
     </Grid>
 </Page>

@@ -41,9 +41,15 @@ namespace FractalBench
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int i = PopulateCPUInfo();
-            LoadChart(i);
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+            int i = GetCpuUsage();
+            GetChartData(i);
             TextBlock1.Text = i.ToString();
+
+            watch.Stop();
+            var elapsedMs = watch.ElapsedMilliseconds;
+            TextBlock2.Text = elapsedMs.ToString();
+
         }
 
         private void BlankPage1_Load(object sender, EventArgs e) 
@@ -52,7 +58,7 @@ namespace FractalBench
             this.LineChart1.Title = "CPU Usage";
         }
 
-        private int PopulateCPUInfo()
+        private int GetCpuUsage()
         {
             int process = 0;
             // Creates and returns a CpuUsage instance that can be used to query the CPU time on this operating system.
@@ -65,7 +71,7 @@ namespace FractalBench
             return process;
         }
 
-        private void LoadChart(int processUsage)
+        private void GetChartData(int processUsage)
         {
             observableCollection.Add(new Chart { Time = DateTime.Now, Utilization = processUsage });
             (LineChart1.Series[0] as LineSeries).ItemsSource = observableCollection;
