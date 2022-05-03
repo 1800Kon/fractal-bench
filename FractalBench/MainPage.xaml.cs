@@ -1,18 +1,11 @@
 ﻿using FractalBench.Classes;
 using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Drawing.Imaging;
 using System.IO;
 using System.Runtime.InteropServices.WindowsRuntime;
-using System.Threading;
 using System.Threading.Tasks;
-using System.Timers;
-using Windows.Foundation;
 using Windows.Graphics.Imaging;
 using Windows.Storage;
-using Windows.Storage.Pickers;
 using Windows.Storage.Streams;
 using Windows.UI;
 using Windows.UI.Xaml;
@@ -30,12 +23,6 @@ namespace FractalBench
         {
             InitializeComponent();
         }
-
-        private async Task ExportFractalToFileAsync(WriteableBitmap fractal)
-        { 
-            
-        }
-
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -65,24 +52,14 @@ namespace FractalBench
                     BitmapEncoderGuid = BitmapEncoder.JpegEncoderId;
                     break;
 
-                case FileFormat.Png:
-                    FileName += "png";
+                case FileFormat.Jpg:
+                    FileName += "jpg";
                     BitmapEncoderGuid = BitmapEncoder.PngEncoderId;
                     break;
 
-                case FileFormat.Bmp:
-                    FileName += "bmp";
+                case FileFormat.Png:
+                    FileName += "png";
                     BitmapEncoderGuid = BitmapEncoder.BmpEncoderId;
-                    break;
-
-                case FileFormat.Tiff:
-                    FileName += "tiff";
-                    BitmapEncoderGuid = BitmapEncoder.TiffEncoderId;
-                    break;
-
-                case FileFormat.Gif:
-                    FileName += "gif";
-                    BitmapEncoderGuid = BitmapEncoder.GifEncoderId;
                     break;
             }
 
@@ -102,16 +79,16 @@ namespace FractalBench
                                     pixels);
                 await encoder.FlushAsync();
             }
+            //TODO: Task to assign the task to export the image;
+            //TODO: Task to output the results;
             return file;
         }
 
         private enum FileFormat
         {
             Jpeg,
-            Png,
-            Bmp,
-            Tiff,
-            Gif
+            Jpg,
+            Png
         }
 
         private async void Render_Click(object sender, RoutedEventArgs e)
