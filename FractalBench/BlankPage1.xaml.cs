@@ -2,20 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Threading;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.System.Diagnostics;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -39,7 +27,15 @@ namespace FractalBench
         {
             this.InitializeComponent();
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            while (iscontinue) 
+            {
+                test();
+                await System.Threading.Tasks.Task.Delay(500);
+            } 
+        }
+        private void test()
         {
             var watch = System.Diagnostics.Stopwatch.StartNew();
             int i = GetCpuUsage();
@@ -49,13 +45,6 @@ namespace FractalBench
             watch.Stop();
             var elapsedMs = watch.ElapsedMilliseconds;
             TextBlock2.Text = elapsedMs.ToString();
-
-        }
-
-        private void BlankPage1_Load(object sender, EventArgs e) 
-        {
-            this.LineChart1.Series.Clear();
-            this.LineChart1.Title = "CPU Usage";
         }
 
         private int GetCpuUsage()
