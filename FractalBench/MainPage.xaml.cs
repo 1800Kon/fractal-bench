@@ -18,9 +18,9 @@ namespace FractalBench
         }
 
         private void Render_Click(object sender, RoutedEventArgs e)
-        {
-            fractalImage.Source = fractalRenderer.CreateFractal(400, 400, 4);
-
+        { 
+            var bitmap = fractalRenderer.CreateFractal(400, 400, 4);
+            fractalImage.Source = bitmap;
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
