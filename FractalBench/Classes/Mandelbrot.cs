@@ -17,7 +17,7 @@ namespace FractalBench.Classes
 {
     class Mandelbrot : Fractal
     {
-        public Mandelbrot()
+        public Mandelbrot(int width, int height, int noOfThreads)
         {
             this.height = height;
             this.width = width; 
@@ -29,7 +29,7 @@ namespace FractalBench.Classes
         public int noOfThreads { get; set; }
         public object fractalImage { get; private set; }
 
-        public WriteableBitmap CreateFractal(int width, int height, int noOfThreads)
+        public WriteableBitmap CreateFractal()
         {
             var startingSectionX = 0;
             var startingSectionY = 0;
