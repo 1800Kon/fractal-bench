@@ -120,3 +120,6 @@ C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\.winm
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\Microsoft.Win32.Registry.dll
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\FxResources.Microsoft.Win32.Registry.SR.resw
+C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\Microsoft.Win32.Registry.dll
+C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\obj\x86\Debug\FxResources.Microsoft.Win32.Registry.SR.resw

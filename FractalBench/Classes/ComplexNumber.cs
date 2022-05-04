@@ -8,8 +8,8 @@ namespace FractalBench.Classes
 {
     public class ComplexNumber
     {
-        public double a;
-        public double b;
+        private double a;
+        private double b;
 
         public ComplexNumber(double a, double b)
         {

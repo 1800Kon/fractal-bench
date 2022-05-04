@@ -1,6 +1,7 @@
 ﻿using FractalBench.Classes;
 using System;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
@@ -21,9 +22,9 @@ namespace FractalBench
             InitializeComponent();
         }
 
-        private void Render_Click(object sender, RoutedEventArgs e)
+        private async void Render_Click(object sender, RoutedEventArgs e)
         {
-            var bitmap = fractalRenderer.CreateFractal(400, 400, 4);
+            var bitmap = await fractalRenderer.CreateFractal(400, 400, 4);
             fractalImage.Source = bitmap;
         }
 

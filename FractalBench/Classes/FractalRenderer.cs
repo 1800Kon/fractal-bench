@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.UserDataTasks;
 using Windows.Foundation.Metadata;
 using Windows.UI.Xaml.Media.Imaging;
 using WinRTXamlToolkit.Imaging;
@@ -15,7 +16,7 @@ namespace FractalBench.Classes
 {
     class FractalRenderer
     {
-        public WriteableBitmap CreateFractal(int width, int height, int noOfThreads)
+        public async Task<WriteableBitmap> CreateFractal(int width, int height, int noOfThreads)
         {
             var tasks = new List<Task>();
             var semaphore = new Semaphore(noOfThreads, noOfThreads);
@@ -23,7 +24,8 @@ namespace FractalBench.Classes
             var startingSectionY = 0;
             var endingSectionX = 0;
             var endingSectionY = 0;
-            var bitmap = new WriteableBitmap(width, height);
+            //var bitmap = new WriteableBitmap(width, height);
+            WriteableBitmap bitmap = BitmapFactory.New(width, height);
             var buffer = bitmap.PixelBuffer.ToArray();
 
             //ThreadPool.SetMaxThreads(noOfThreads, noOfThreads);
@@ -77,12 +79,13 @@ namespace FractalBench.Classes
             var final = Task.WhenAll(tasks);
             try
             {
-                final.Wait();
+                await final;
             }
             catch
             {
                 // ignored
             }
+
             buffer.CopyTo(bitmap.PixelBuffer);
             return final.Status == TaskStatus.RanToCompletion ? bitmap : null;
         }
@@ -99,7 +102,6 @@ namespace FractalBench.Classes
                     var c = new ComplexNumber(a, b);
                     var z = new ComplexNumber(0, 0);
                     var iterations = 0;
-
                     do
                     {
                         iterations++;
@@ -114,16 +116,11 @@ namespace FractalBench.Classes
                     // Color the bitmap
                     if (iterations < 100000)
                     {
-                        buffer[x + y * width] = 100;
-                        buffer[x + y * width + 1] = 100;
-                        buffer[x + y * width + 2] = 255;
+                        buffer[((y * width) + x) * 4] = 100;
                     }
                     else
                     {
-                        const int color = 240;
-                        buffer[x + y * width] = color;
-                        buffer[x + y * width] = color;
-                        buffer[x + y * width] = 255;
+                        buffer[((y * width) + x) * 4] = 240;
                     }
                 }
             }
