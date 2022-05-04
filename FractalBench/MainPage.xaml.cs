@@ -1,10 +1,8 @@
 ﻿using FractalBench.Classes;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Threading;
+using System;
+using System.Collections.ObjectModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media.Imaging;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
 
 namespace FractalBench
@@ -12,31 +10,46 @@ namespace FractalBench
     public sealed partial class MainPage : Page
     {
         FractalRenderer fractalRenderer = new FractalRenderer();
+        ChartRenderer chartRenderer = new ChartRenderer();
+        ObservableCollection<Chart> observableCollection = new ObservableCollection<Chart>();
+        public ObservableCollection<Chart> LstSource
+        {
+            get { return observableCollection; }
+        }
         public MainPage()
         {
             InitializeComponent();
         }
 
         private void Render_Click(object sender, RoutedEventArgs e)
-        { 
+        {
             var bitmap = fractalRenderer.CreateFractal(400, 400, 4);
             fractalImage.Source = bitmap;
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            LoadChartContents();
         }
 
-        private void LoadChartContents()
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            List<Chart> lstSource = new List<Chart>();
-            lstSource.Add(new Chart() { Utilization = 30, Time = 1 });
-            lstSource.Add(new Chart() { Utilization = 25, Time = 2 });
-            lstSource.Add(new Chart() { Utilization = 35, Time = 3 });
-            lstSource.Add(new Chart() { Utilization = 20, Time = 4 });
-            lstSource.Add(new Chart() { Utilization = 15, Time = 5 });
-            ((ColumnSeries)LineChart.Series[0]).ItemsSource = lstSource;
+            while (chartRenderer.isContinue)
+            {
+                var watch = System.Diagnostics.Stopwatch.StartNew();
+
+                int i = chartRenderer.GetCpuUsage();
+                chartRenderer.GetChartData(observableCollection, i);
+
+                (LineChart1.Series[0] as LineSeries).ItemsSource = observableCollection;
+                UsageText.Text = i.ToString();
+
+                watch.Stop();
+
+                var elapsedMs = watch.ElapsedMilliseconds;
+                TextBlock2.Text = elapsedMs.ToString();
+
+                await System.Threading.Tasks.Task.Delay(500);
+            }
         }
     }
 }

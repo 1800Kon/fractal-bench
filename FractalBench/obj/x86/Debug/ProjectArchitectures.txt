@@ -1,1 +1,1 @@
-C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\FractalBench.csproj;x86
+C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\FractalBench.csproj;x86

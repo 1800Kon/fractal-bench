@@ -22,12 +22,13 @@
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="996,115,0,0" Text="Threads to use:" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="288" FontSize="36"/>
         <TextBlock HorizontalAlignment="Left" Margin="979,263,0,0" Text="Fractal to generate:" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="336" FontSize="36"/>
-        <Button x:Name="Render" Content="Render" Margin="934,471,0,0" VerticalAlignment="Top" Height="106" Width="498" FontSize="72" Click="Render_Click"/>
+        <Button Content="Button" Margin="996,540,0,0" VerticalAlignment="Top" FontSize="72" Click="Button_Click" Height="132" Width="268"/>
+        <Button x:Name="Render" Content="Render" Margin="996,410,0,0" VerticalAlignment="Top" Height="120" Width="268" FontSize="72" Click="Render_Click"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="496,752,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1320,614,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="106" FontSize="36" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
-        <Charting:Chart x:Name="LineChart" Margin="35,607,215,39">
-            <Charting:ColumnSeries Title="CPU results" Margin="0" IndependentValuePath="Utilization" DependentValuePath="Time" IsSelectionEnabled="True"/>
+        <TextBlock x:Name="UsageText" HorizontalAlignment="Left" Margin="63,600,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="50" Height="77" Width="226"/>
+        <Charting:Chart x:Name="LineChart1" Margin="63,672,91,51">
+            <Charting:LineSeries ItemsSource="{x:Bind LstSource}" Title="CPU results" Margin="0" IndependentValuePath="Time" DependentValuePath="Utilization" IsSelectionEnabled="True"/>
         </Charting:Chart>
-        <TextBlock HorizontalAlignment="Left" Margin="1355,614,0,0" TextWrapping="Wrap" Text="%" VerticalAlignment="Top" Height="40" Width="33" FontSize="36"/>
+        <TextBlock x:Name="TextBlock2" HorizontalAlignment="Left" Margin="318,600,0,0" TextWrapping="Wrap" Text="elapsedMs" VerticalAlignment="Top" FontSize="50"/>
     </Grid>
 </Page>
