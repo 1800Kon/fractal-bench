@@ -1,6 +1,7 @@
 ﻿using FractalBench.Classes;
-using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
@@ -31,25 +32,9 @@ namespace FractalBench
         {
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            while (chartRenderer.isContinue)
-            {
-                var watch = System.Diagnostics.Stopwatch.StartNew();
-
-                int i = chartRenderer.GetCpuUsage();
-                chartRenderer.GetChartData(observableCollection, i);
-
-                (LineChart1.Series[0] as LineSeries).ItemsSource = observableCollection;
-                UsageText.Text = i.ToString();
-
-                watch.Stop();
-
-                var elapsedMs = watch.ElapsedMilliseconds;
-                TextBlock2.Text = elapsedMs.ToString();
-
-                await System.Threading.Tasks.Task.Delay(500);
-            }
+            chartRenderer.RenderChart(this);
         }
     }
 }
