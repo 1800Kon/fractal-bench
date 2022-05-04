@@ -46,15 +46,6 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="FractalBench.BlankPage1" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog">
-      <RootProperty Name="Title" />
-      <RootProperty Name="PrimaryButtonText" />
-      <RootProperty Name="SecondaryButtonText" />
-      <RootProperty Name="Content" />
-      <RootEvent Name="PrimaryButtonClick" />
-      <RootEvent Name="SecondaryButtonClick" />
-    </RootType>
-    <RootType FullName="FractalBench.ContentDialog1" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />

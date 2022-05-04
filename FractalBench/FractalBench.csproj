@@ -129,9 +129,6 @@
     <Compile Include="Classes\FractalRenderer.cs" />
     <Compile Include="Classes\Mandelbrot.cs" />
     <Compile Include="Classes\Snowflake.cs" />
-    <Compile Include="ContentDialog1.xaml.cs">
-      <DependentUpon>ContentDialog1.xaml</DependentUpon>
-    </Compile>
     <Compile Include="CpuUsage.cs" />
     <Compile Include="CpuUsage9x.cs" />
     <Compile Include="CpuUsageNt.cs" />
@@ -163,10 +160,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="BlankPage1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ContentDialog1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
