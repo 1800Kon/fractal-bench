@@ -32,8 +32,8 @@ namespace FractalBench.Classes
             WriteableBitmap bitmap = BitmapFactory.New(width, height);
             var buffer = bitmap.PixelBuffer.ToArray();
 
-            //ThreadPool.SetMaxThreads(noOfThreads, noOfThreads);
-            //ThreadPool.SetMinThreads(noOfThreads, noOfThreads);
+            ThreadPool.SetMaxThreads(noOfThreads, noOfThreads);
+            ThreadPool.SetMinThreads(noOfThreads, noOfThreads);
 
             for (var i = 0; i <= 3; i++)
             {
