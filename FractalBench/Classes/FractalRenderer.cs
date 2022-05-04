@@ -120,7 +120,7 @@ namespace FractalBench.Classes
                     // Color the bitmap
                     if (iterations < 100000)
                     {
-                        buffer[((y * width) + x) * 4] = 100;
+                        buffer[((y * width) + x) * 4] = 50;
                     }
                     else
                     {
