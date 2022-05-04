@@ -42,21 +42,21 @@ namespace FractalBench.Classes
                     case 0:
                         startingSectionX = 0;
                         startingSectionY = 0;
-                        endingSectionX = 199;
-                        endingSectionY = 199;
+                        endingSectionX = 200;
+                        endingSectionY = 200;
                         break;
 
                     case 1:
                         startingSectionX = 200;
                         startingSectionY = 0;
                         endingSectionX = 400;
-                        endingSectionY = 199;
+                        endingSectionY = 200;
                         break;
 
                     case 2:
                         startingSectionX = 0;
                         startingSectionY = 200;
-                        endingSectionX = 199;
+                        endingSectionX = 200;
                         endingSectionY = 400;
                         break;
 
@@ -120,11 +120,15 @@ namespace FractalBench.Classes
                     // Color the bitmap
                     if (iterations < 100000)
                     {
-                        buffer[((y * width) + x) * 4] = 50;
+                        buffer[(((y * width) + x) * 4)] = 50;
+                        buffer[(((y * width) + x) * 4) + 1] = 50;
+                        buffer[(((y * width) + x) * 4) + 2] = 50;
                     }
                     else
                     {
-                        buffer[((y * width) + x) * 4] = 240;
+                        buffer[(((y * width) + x) * 4)] = 150;
+                        buffer[(((y * width) + x) * 4) + 1] = 150;
+                        buffer[(((y * width) + x) * 4) + 2] = 150;
                     }
                 }
             }
