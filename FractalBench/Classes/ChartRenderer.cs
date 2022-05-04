@@ -11,7 +11,11 @@ namespace FractalBench
         public bool isContinue = true;
         private static CpuUsage cpu;
 
-        public ObservableCollection<Chart> LstSource { get; } = new ObservableCollection<Chart>();
+        ObservableCollection<Chart> observableCollection = new ObservableCollection<Chart>();
+        public ObservableCollection<Chart> LstSource
+        {
+            get { return observableCollection; }
+        }
 
         public async void RenderChart(MainPage mainPage)
         {
