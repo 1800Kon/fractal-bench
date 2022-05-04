@@ -500,3 +500,10 @@ FractalBench/obj/project.nuget.cache
 FractalBench/obj/x64/Debug/App.g.i.cs
 FractalBench/obj/x64/Debug/MainPage.g.i.cs
 FractalBench/obj/x64/Debug/XamlSaveStateFile.xml
+FractalBench/bin/x86/Debug/AppX/resources.pri
+FractalBench/bin/x86/Debug/AppX/MainPage.xbf
+FractalBench/obj/x86/Debug/XamlSaveStateFile.xml
+FractalBench/obj/x86/Debug/MainPage.xaml
+FractalBench/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+FractalBench/bin/x86/Debug/AppX/resources.pri
+FractalBench/bin/x86/Debug/AppX/MainPage.xbf
