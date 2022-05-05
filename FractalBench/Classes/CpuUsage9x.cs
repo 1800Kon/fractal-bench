@@ -28,8 +28,8 @@
   OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-using System;
 using Microsoft.Win32;
+using System;
 
 namespace Org.Mentalis.Utilities
 {

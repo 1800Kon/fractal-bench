@@ -50,8 +50,6 @@ namespace FractalBench.Classes
                                     pixels);
                 await encoder.FlushAsync();
             }
-            //TODO: Task to assign the task to export the image;
-            //TODO: Task to output the results;
             return file;
         }
     }

@@ -30,36 +30,40 @@
 
 using System;
 
-namespace Org.Mentalis.Utilities {
-	/// <summary>
-	/// Defines an abstract base class for implementations of CPU usage counters.
-	/// </summary>
-	public abstract class CpuUsage {
-		/// <summary>
-		/// Creates and returns a CpuUsage instance that can be used to query the CPU time on this operating system.
-		/// </summary>
-		/// <returns>An instance of the CpuUsage class.</returns>
-		/// <exception cref="NotSupportedException">This platform is not supported -or- initialization of the CPUUsage object failed.</exception>
-		public static CpuUsage Create() {
-			if (m_CpuUsage == null) {
-				if (Environment.OSVersion.Platform == PlatformID.Win32NT)
-					m_CpuUsage = new CpuUsageNt();
-				else if (Environment.OSVersion.Platform == PlatformID.Win32Windows)
-					m_CpuUsage = new CpuUsage9x();
-				else
-					throw new NotSupportedException();
-			}
-			return m_CpuUsage;
-		}
-		/// <summary>
-		/// Determines the current average CPU load.
-		/// </summary>
-		/// <returns>An integer that holds the CPU load percentage.</returns>
-		/// <exception cref="NotSupportedException">One of the system calls fails. The CPU time can not be obtained.</exception>
-		public abstract int Query();
-		/// <summary>
-		/// Holds an instance of the CPUUsage class.
-		/// </summary>
-		private static CpuUsage m_CpuUsage= null;
-	}
+namespace Org.Mentalis.Utilities
+{
+    /// <summary>
+    /// Defines an abstract base class for implementations of CPU usage counters.
+    /// </summary>
+    public abstract class CpuUsage
+    {
+        /// <summary>
+        /// Creates and returns a CpuUsage instance that can be used to query the CPU time on this operating system.
+        /// </summary>
+        /// <returns>An instance of the CpuUsage class.</returns>
+        /// <exception cref="NotSupportedException">This platform is not supported -or- initialization of the CPUUsage object failed.</exception>
+        public static CpuUsage Create()
+        {
+            if (m_CpuUsage == null)
+            {
+                if (Environment.OSVersion.Platform == PlatformID.Win32NT)
+                    m_CpuUsage = new CpuUsageNt();
+                else if (Environment.OSVersion.Platform == PlatformID.Win32Windows)
+                    m_CpuUsage = new CpuUsage9x();
+                else
+                    throw new NotSupportedException();
+            }
+            return m_CpuUsage;
+        }
+        /// <summary>
+        /// Determines the current average CPU load.
+        /// </summary>
+        /// <returns>An integer that holds the CPU load percentage.</returns>
+        /// <exception cref="NotSupportedException">One of the system calls fails. The CPU time can not be obtained.</exception>
+        public abstract int Query();
+        /// <summary>
+        /// Holds an instance of the CPUUsage class.
+        /// </summary>
+        private static CpuUsage m_CpuUsage = null;
+    }
 }

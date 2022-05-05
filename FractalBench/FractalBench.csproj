@@ -125,7 +125,7 @@
     <Compile Include="Classes\CpuUsage.cs" />
     <Compile Include="Classes\CpuUsage9x.cs" />
     <Compile Include="Classes\CpuUsageNt.cs" />
-    <Compile Include="Classes\ExportFractal.cs" />
+    <Compile Include="Classes\ExportImageTypes.cs" />
     <Compile Include="Classes\ExportFractalBase.cs" />
     <Compile Include="Classes\Fractal.cs" />
     <Compile Include="Classes\FractalRenderer.cs" />
