@@ -11,7 +11,13 @@ namespace FractalBench.Classes
 {
     public class ExportFractalBase : ExportImageTypes
     {
-
+        /// <summary>
+        /// The method creates a new folder called 'FractalBench' in downloads.
+        /// Then converts the Bitmap into selected image file and exports the file to the folder.
+        /// </summary>
+        /// <param name="WB"></param>
+        /// <param name="fileFormat"></param>
+        /// <returns>image file</returns>
         public async Task<StorageFile> WriteableBitmapToStorageFile(WriteableBitmap WB, FileFormat fileFormat)
         {
             string FileName = "MyFile.";
@@ -34,7 +40,7 @@ namespace FractalBench.Classes
                     break;
             }
 
-            var file = await Windows.Storage.DownloadsFolder.CreateFileAsync(FileName, CreationCollisionOption.GenerateUniqueName);
+            var file = await DownloadsFolder.CreateFileAsync(FileName, CreationCollisionOption.GenerateUniqueName);
             using (IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.ReadWrite))
             {
                 BitmapEncoder encoder = await BitmapEncoder.CreateAsync(BitmapEncoderGuid, stream);
