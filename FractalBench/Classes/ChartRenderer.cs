@@ -17,6 +17,11 @@ namespace FractalBench
             get { return observableCollection; }
         }
 
+        /// <summary>
+        /// Render chart through GetCpuUsage() and GetChartData() and replace text from MainPage and repeat task per 500ms
+        /// </summary>
+        /// <param name="mainPage"></param>
+        /// <returns>void</returns>
         public async void RenderChart(MainPage mainPage)
         {
             while (isContinue)
@@ -30,6 +35,11 @@ namespace FractalBench
             }
         }
 
+        /// <summary>
+        /// Use CpuUsage class to take info from system registry and repeat query
+        /// </summary>
+        /// <param></param>
+        /// <returns>void</returns>
         public int GetCpuUsage()
         {
             int process = 0;
@@ -42,6 +52,11 @@ namespace FractalBench
             return process;
         }
 
+        /// <summary>
+        /// Add a new chart to the graph on call
+        /// </summary>
+        /// <param></param>
+        /// <returns>void</returns>
         public void GetChartData(int processUsage, MainPage mainPage)
         {
             observableCollection.Add(new Chart { Time = DateTime.Now, Utilization = processUsage });
