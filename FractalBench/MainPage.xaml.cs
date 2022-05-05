@@ -15,7 +15,8 @@ namespace FractalBench
         FractalRenderer fractalRenderer = new FractalRenderer();
         ChartRenderer chartRenderer = new ChartRenderer();
         ExportFractalBase export = new ExportFractalBase();
-        //ExportFractal file = new ExportFractal();
+        private int threadSelection;
+
         ObservableCollection<Chart> observableCollection = new ObservableCollection<Chart>();
         public ObservableCollection<Chart> LstSource
         {
@@ -28,35 +29,27 @@ namespace FractalBench
 
         private async void Render_Click(object sender, RoutedEventArgs e)
         {
-            var bitmap = await fractalRenderer.CreateFractal(400, 400, 4);
+            chartRenderer.RenderChart(this);
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+            threadSelection += Convert.ToInt32(NoOfThreads.SelectedIndex) + 1;
+            var bitmap = await fractalRenderer.CreateFractal(400, 400, threadSelection);
             fractalImage.Source = bitmap;
 
             var fileType = FileFormat.Png;
 
-            try
+            if (bitmap != null)
             {
-                if (bitmap != null)
-                {
-                    await export.WriteableBitmapToStorageFile(bitmap, fileType);
-                }
-                else
-                {
-                    Debug.WriteLine("not exported!!");
-                }
+                await export.WriteableBitmapToStorageFile(bitmap, fileType);
             }
-            catch (Exception ex)
+            else
             {
-                Debug.WriteLine(ex);
+                Debug.WriteLine("not exported!!");
             }
-        }
 
-        private void Page_Loaded(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            chartRenderer.RenderChart(this);
+            watch.Stop();
+            chartRenderer.isContinue = false;
+            var elapsedMs = watch.ElapsedMilliseconds;
+            ElapsedText.Text = elapsedMs.ToString();
         }
     }
 }

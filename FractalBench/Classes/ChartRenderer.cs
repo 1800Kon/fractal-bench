@@ -21,17 +21,11 @@ namespace FractalBench
         {
             while (isContinue)
             {
-                var watch = System.Diagnostics.Stopwatch.StartNew();
-
                 int usage = GetCpuUsage();
 
                 GetChartData(usage, mainPage);
-                mainPage.UsageText.Text = usage.ToString();
+                mainPage.UsageText.Text = usage.ToString() + "%";
 
-                watch.Stop();
-
-                var elapsedMs = watch.ElapsedMilliseconds;
-                mainPage.ElapsedText.Text = elapsedMs.ToString();
                 await Task.Delay(500);
             }
         }

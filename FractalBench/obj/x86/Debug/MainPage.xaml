@@ -6,30 +6,24 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"                     >
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Margin="0,0,0,10">
         <Image x:ConnectionId='2' x:Name="fractalImage" HorizontalAlignment="Left" Height="400" Margin="154,157,0,0" VerticalAlignment="Top" Width="400" Source="/Assets/Square150x150Logo.scale-200.png" Stretch="Uniform" MinWidth="400" MaxWidth="400" MinHeight="400" MaxHeight="400" />
-        <ComboBox x:ConnectionId='3' x:Name="FractalToGenerate" Margin="996,318,0,0" Width="272" Height="57" PlaceholderText="Fractal" FontSize="24">
-            <ComboBoxItem Content="Mandelbrot"/>
-            <ComboBoxItem Content="Snowflake"/>
-        </ComboBox>
-        <ComboBox x:ConnectionId='4' x:Name="NoOfThreads" Margin="996,170,0,0" Width="272" Height="57" PlaceholderText="Threads" FontSize="24">
-            <ComboBoxItem Content="1"/>
+        <ComboBox x:ConnectionId='3' x:Name="NoOfThreads" Margin="996,238,0,0" Width="272" Height="57" PlaceholderText="Threads" FontSize="24">
+            <ComboBoxItem Content="1" />
             <ComboBoxItem Content="2"/>
-            <ComboBoxItem Content="3"/>
-            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="3" />
+            <ComboBoxItem Content="4" />
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="996,115,0,0" Text="Threads to use:" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="288" FontSize="36"/>
-        <TextBlock HorizontalAlignment="Left" Margin="979,263,0,0" Text="Fractal to generate:" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="336" FontSize="36"/>
-        <Button x:ConnectionId='5' Content="Button" Margin="996,540,0,0" VerticalAlignment="Top" FontSize="72"                      Height="132" Width="268"/>
-        <Button x:ConnectionId='6' x:Name="Render" Content="Render" Margin="996,410,0,0" VerticalAlignment="Top" Height="120" Width="268" FontSize="72"                     />
+        <TextBlock HorizontalAlignment="Left" Margin="996,183,0,0" Text="Threads to use:" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="288" FontSize="36"/>
+        <Button x:ConnectionId='4' x:Name="Render" Content="Render" Margin="996,410,0,0" VerticalAlignment="Top" Height="120" Width="268" FontSize="72"                     />
         <Image HorizontalAlignment="Left" Height="100" Margin="496,752,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBlock x:ConnectionId='7' x:Name="UsageText" x:FieldModifier="public" HorizontalAlignment="Left" Margin="63,600,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="50" Height="77" Width="226"/>
-        <Charting:Chart x:ConnectionId='8' x:Name="LineChart1" Margin="63,672,91,51" x:FieldModifier="public">
-            <Charting:LineSeries x:ConnectionId='10'                                  Title="CPU results" Margin="0" IndependentValuePath="Time" DependentValuePath="Utilization" IsSelectionEnabled="True"/>
+        <TextBlock x:ConnectionId='5' x:Name="UsageText" x:FieldModifier="public" HorizontalAlignment="Left" Margin="63,600,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="50" Height="77" Width="226"/>
+        <Charting:Chart x:ConnectionId='6' x:Name="LineChart1" Margin="63,672,91,51" x:FieldModifier="public">
+            <Charting:LineSeries x:ConnectionId='8'                                  Title="CPU%" Margin="0" IndependentValuePath="Time" DependentValuePath="Utilization" IsSelectionEnabled="True"/>
         </Charting:Chart>
-        <TextBlock x:ConnectionId='9' x:Name="ElapsedText" x:FieldModifier="public" HorizontalAlignment="Left" Margin="318,600,0,0" TextWrapping="Wrap" Text="elapsedMs" VerticalAlignment="Top" FontSize="50"/>
+        <TextBlock x:ConnectionId='7' x:Name="ElapsedText" x:FieldModifier="public" HorizontalAlignment="Left" Margin="318,600,0,0" TextWrapping="Wrap" Text="elapsedMs" VerticalAlignment="Top" FontSize="50"/>
     </Grid>
 </Page>
 
