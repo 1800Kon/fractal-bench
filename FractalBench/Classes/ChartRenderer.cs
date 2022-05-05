@@ -27,11 +27,13 @@ namespace FractalBench
             while (isContinue)
             {
                 int usage = GetCpuUsage();
+                if (usage >= 0)
+                {
+                    GetChartData(usage, mainPage);
+                    mainPage.UsageText.Text = usage.ToString() + "%";
 
-                GetChartData(usage, mainPage);
-                mainPage.UsageText.Text = usage.ToString() + "%";
-
-                await Task.Delay(500);
+                    await Task.Delay(500);
+                }
             }
         }
 
@@ -61,6 +63,11 @@ namespace FractalBench
         {
             observableCollection.Add(new Chart { Time = DateTime.Now, Utilization = processUsage });
             (mainPage.LineChart1.Series[0] as LineSeries).ItemsSource = observableCollection;
+        }
+
+        public void ClearChart() 
+        {
+            observableCollection.Clear();
         }
     }
 }

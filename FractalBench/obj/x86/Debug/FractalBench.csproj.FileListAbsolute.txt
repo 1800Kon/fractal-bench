@@ -116,7 +116,6 @@ C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\quali
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
-C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424779200000000.json
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\Microsoft.Win32.Registry.dll
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\FxResources.Microsoft.Win32.Registry.SR.resw

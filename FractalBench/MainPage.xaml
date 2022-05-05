@@ -24,5 +24,6 @@
             <Charting:LineSeries ItemsSource="{x:Bind LstSource}" Title="CPU%" Margin="0" IndependentValuePath="Time" DependentValuePath="Utilization" IsSelectionEnabled="True"/>
         </Charting:Chart>
         <TextBlock x:Name="ElapsedText" x:FieldModifier="public" HorizontalAlignment="Left" Margin="318,600,0,0" TextWrapping="Wrap" Text="elapsedMs" VerticalAlignment="Top" FontSize="50"/>
+        <Button Content="Reset" Margin="996,577,0,0" VerticalAlignment="Top" FontSize="75" Width="268" Height="138" Click="Button_Click"/>
     </Grid>
 </Page>
