@@ -2,10 +2,8 @@ using FractalBench.Classes;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using WinRTXamlToolkit.Controls.DataVisualization.Charting;
 using static FractalBench.Classes.ExportImageTypes;
 
 namespace FractalBench

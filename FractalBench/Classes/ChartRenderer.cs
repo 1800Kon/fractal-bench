@@ -63,7 +63,7 @@ namespace FractalBench
             (mainPage.LineChart1.Series[0] as LineSeries).ItemsSource = observableCollection;
         }
 
-        public void ClearChart() 
+        public void ClearChart()
         {
             observableCollection.Clear();
         }

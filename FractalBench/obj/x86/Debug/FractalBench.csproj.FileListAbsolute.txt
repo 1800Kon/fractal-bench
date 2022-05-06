@@ -57,6 +57,9 @@ C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\WinRTXamlToo
 C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\obj\x86\Debug\WinRTXamlToolkit.pri.xml
 C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.pri.xml
 C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization\en-US\WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources.resw
+C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\Microsoft.Win32.Registry.dll
+C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\obj\x86\Debug\FxResources.Microsoft.Win32.Registry.SR.resw
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\WinRTXamlToolkit\Properties\WinRTXamlToolkit.rd.xml
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml
@@ -71,8 +74,10 @@ C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\AppxM
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\Core\AppxManifest.xml
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\Core\FractalBench.exe
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\FractalBench.build.appxrecipe
+C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\Microsoft.Win32.Registry.dll
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\System.Runtime.dll
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\System.Drawing.Common.dll
+C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\WinRTXamlToolkit.dll
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization.dll
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\WriteableBitmapEx.Uwp.dll
@@ -97,6 +102,7 @@ C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\Write
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\FractalBench.exe
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\FractalBench.pdb
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\ResourceHandlingTask.state
+C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\FxResources.Microsoft.Win32.Registry.SR.resw
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\FxResources.System.Drawing.Common.SR.resw
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\WinRTXamlToolkit.Controls.DataVisualization\en-US\WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources.resw
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\priconfig.xml
@@ -116,9 +122,3 @@ C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\quali
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
-C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\Microsoft.Win32.Registry.dll
-C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Tung Do\Documents\GitHub\fractal-bench\FractalBench\obj\x86\Debug\FxResources.Microsoft.Win32.Registry.SR.resw
-C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\Microsoft.Win32.Registry.dll
-C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\konst\Desktop\Uni\fractal-bench\FractalBench\obj\x86\Debug\FxResources.Microsoft.Win32.Registry.SR.resw

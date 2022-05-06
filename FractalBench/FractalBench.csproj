@@ -129,8 +129,6 @@
     <Compile Include="Classes\ExportFractalBase.cs" />
     <Compile Include="Classes\Fractal.cs" />
     <Compile Include="Classes\FractalRenderer.cs" />
-    <Compile Include="Classes\Mandelbrot.cs" />
-    <Compile Include="Classes\Snowflake.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
