@@ -18,10 +18,9 @@ namespace FractalBench.Classes
             var startingSectionY = 0;
             var endingSectionX = 0;
             var endingSectionY = 0;
-            //var bitmap = new WriteableBitmap(width, height);
             WriteableBitmap bitmap = BitmapFactory.New(width, height);
             var buffer = bitmap.PixelBuffer.ToArray();
-
+            // Set the max amount of threads to the amount of threads specified in the app
             ThreadPool.SetMaxThreads(noOfThreads, noOfThreads);
             ThreadPool.SetMinThreads(noOfThreads, noOfThreads);
 
