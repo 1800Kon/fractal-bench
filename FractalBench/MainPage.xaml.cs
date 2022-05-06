@@ -56,6 +56,7 @@ namespace FractalBench
         {
             chartRenderer.ClearChart();
             chartRenderer.isContinue = true;
+            ElapsedText.Text = "elapsedMs";
         }
     }
 }
