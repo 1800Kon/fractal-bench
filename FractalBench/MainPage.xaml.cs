@@ -51,5 +51,11 @@ namespace FractalBench
             var elapsedMs = watch.ElapsedMilliseconds;
             ElapsedText.Text = elapsedMs.ToString();
         }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            chartRenderer.ClearChart();
+            chartRenderer.isContinue = true;
+        }
     }
 }
