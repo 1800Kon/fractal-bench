@@ -27,8 +27,9 @@ namespace FractalBench
 
         private async void Render_Click(object sender, RoutedEventArgs e)
         {
+            if (NoOfThreads.SelectedIndex.Equals(-1)) return;
             chartRenderer.RenderChart(this);
-            var watch = System.Diagnostics.Stopwatch.StartNew();
+            var watch = Stopwatch.StartNew();
             threadSelection += Convert.ToInt32(NoOfThreads.SelectedIndex) + 1;
             var bitmap = await fractalRenderer.CreateFractal(400, 400, threadSelection);
             fractalImage.Source = bitmap;
@@ -48,6 +49,7 @@ namespace FractalBench
             chartRenderer.isContinue = false;
             var elapsedMs = watch.ElapsedMilliseconds;
             ElapsedText.Text = elapsedMs.ToString();
+
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
